@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>My Postcard</title>
-	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>My Postcard</h1>
-				<img
-					src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
-					alt="Icon"
-					width="60"
-				/>
-			</div>
-			<div class="content">
-				<div class="left">
-					<p>Postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
-					<p>This is so cool, can't wait to start doing more stuff!</p>
-				</div>
-				<div class="right">
-					<input type="text" placeholder="Some Name" />
-					<input type="email" placeholder="Some Email" />
-					<textarea placeholder="Some comment"></textarea>
-				</div>
-			</div>
-			<div class="footer">
-				<button>Send My Postcard</button>
-			</div>
-		</div>
-	</body>
+
+<head>
+    <meta charset="UTF-8">cls
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/90a3adb1eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h4>Payment form example</h4>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger">
+                    Some fields are missing
+                </div>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Card #</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-md-3">
+                            <label>CVC #</label>
+                            <input type="text" class="form-control" placeholder="0000">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>First Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>City</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <label>State</label>
+                            <select class="form-select">
+                                <option selected>Pick a state</option>
+                                <option>Merida</option>
+                                <option>Florida</option>
+                                <option>Texas</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Postal Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <form action="#" class="mb-3">
+                        <label>We accept:</label>
+                        <div class="check">
+                            <input type="radio" name="paymentCard" id="visa" checked value="visa">
+                            <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+
+                            <input type="radio" name="paymentCard" id="mastercard" value="mastercard">
+                            <label for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
+
+                            <input type="radio" name="paymentCard" id="club" value="club">
+                            <label for="club"><i class="fab fa-cc-diners-club"></i></label>
+
+                            <input type="radio" name="paymentCard" id="amex" value="amex">
+                            <label for="amex"><i class="fab fa-cc-amex"></i></label>
+                        </div>
+                    </form>
+                    <div class="card-footer bg-light d-flex justify-content-end wd-100">
+                        <div class="text-end">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
